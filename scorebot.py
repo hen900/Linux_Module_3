@@ -42,10 +42,11 @@ allTasks= [
 Task('1: Create a file in /home/cyber/Downloads named "object" (do not include quotes in the file name)','[ -e /home/cyber/Downloads ]'),
 Task('2: Edit the file you created in /home/cyber/Downloads to say "flag07" (do not include quotes in the file name)','[ "$(grep flag07 /home/cyber/Downloads/object)" ]'), 
 Task('3: Create a directory in /edit named "directory with spaces" (do not include quotes in the directory name)','[ -e /edit/directory\ with\ spaces ]'),
-Task('4: Remove the empty directory /home/cyber/trash'
-Task('5: Remove the file /edit/pencil'
-Task('6: Remove the directory /chair and everything in it'
-Task('7: EMPTY the directory /train/shift'
+Task('4: Remove the empty directory /home/cyber/trash','! [ -e /home/cyber/trash ]'),
+Task('5: Remove the file /edit/pencil','! [ -e /edit/pencil ]'),
+Task('6: Remove the directory /chair and everything in it','! [ -e /chair ]'),
+Task('7: EMPTY the directory /train/shift','[ -e /train/shift ] && [ "$(ls /train/shift | wc -l |grep 0)" ]')
+
 
     ]
 
