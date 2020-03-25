@@ -1,6 +1,6 @@
 # Linux_Module_3
 The updated python version of Linux Modules
-## A Note for Instructors ##
+## A Note to Instructors ##
 
 This module is designed to intruduce students to more advanced linux commands and concepts. This module requires backround on networking including TCP/IP and NAT. This module aims to reinforce conceptual understanding with practical learning. Lesson plans are attached in this github under materials/
 
